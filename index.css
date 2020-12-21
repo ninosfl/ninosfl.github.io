@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,500;1,300;1,500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,500;1,300;1,500&display=swap'); */
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 :root {
     --primaryColor:  rgb(84, 81, 255);
     --lighterPrimaryColor: rgba(84, 81, 255, 0.541);
-    --primaryFontFamily: 'JetBrains Mono', monospace;
+    --primaryFontFamily: monospace;
     --borderRadius: 0.3rem;
     --backgroundColor: rgba(48, 48, 48, 0.678);
     --darkerBackgroundColor: rgb(15, 15, 15);
@@ -21,7 +21,6 @@
     border-radius: var(--borderRadius);
     box-shadow: 1px 1px 1px black;
     height: 90vh;
-    border-bottom: 10px solid var(--primaryColor);
     overflow:auto;
 }
 
@@ -30,7 +29,7 @@ html, body {
     font-family: var(--primaryFontFamily);
 }
 
-.main-heading {
+.heading {
     padding: 0.2rem 1rem;
 }
 
@@ -76,4 +75,5 @@ hr {
     margin: 1rem 0;
     padding: .5rem .8rem;
     cursor: pointer;
+    font-family: var(--primaryFontFamily);
 }

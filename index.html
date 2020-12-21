@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Temp</title>
 </head>
+
 <body>
-    <h1>Hello Fresh!</h1>
+    <link rel="stylesheet" href="index.css">
+    <div class="container">
+        <div class="heading-container">
+            <h1 class="main-heading">Hi, I'm Marc!</h1>
+            <div class="avatar"></div>
+        </div>
+        <div class="contact">
+            <h2 class="main-heading">Send me a message</h2>
+            <form class="contact-form" action="https://formspree.io/f/xyybbkeo" method="POST">
+                <textarea name='message' placeholder="message" class="message-composer" cols="20" rows="5" required="true"></textarea>
+                <input  class="message-composer" type="email" name="replyTo" id="replyTo" placeholder="Your email (so I can get back to you!)">
+                <input type="submit" class="button" value="Send">
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>

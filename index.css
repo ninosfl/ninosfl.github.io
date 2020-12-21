@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,500;1,300;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primaryColor:  rgb(84, 81, 255);
+    --lighterPrimaryColor: rgba(84, 81, 255, 0.541);
+    --primaryFontFamily: 'JetBrains Mono', monospace;
+    --borderRadius: 0.3rem;
+    --backgroundColor: rgba(48, 48, 48, 0.678);
+    --darkerBackgroundColor: rgb(15, 15, 15);
+
+}
+
+.container {
+    padding: 3rem;
+    background-color:var(--backgroundColor);
+    color: white;
+    margin: 2rem;
+    border-radius: var(--borderRadius);
+    box-shadow: 1px 1px 1px black;
+    height: 90vh;
+    border-bottom: 10px solid var(--primaryColor);
+    overflow:auto;
+}
+
+html, body {
+    background-color: var(--darkerBackgroundColor);
+    font-family: var(--primaryFontFamily);
+}
+
+.main-heading {
+    padding: 0.2rem 1rem;
+}
+
+hr {
+    border: 1px solid var(--lighterPrimaryColor);
+}
+
+.heading-container {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    background-image: url('images/pup2.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.contact-form {
+    padding: 0 0.5rem;
+}
+
+.message-composer {
+    border-radius: var(--borderRadius);
+    width: 100%;
+    font-size: larger;
+    background-color: var(--darkerBackgroundColor);
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-family: var(--primaryFontFamily);
+    border-bottom: 3px solid var(--primaryColor);
+}
+
+.button {
+    border-radius: var(--borderRadius);
+    background-color: var(--primaryColor);
+    color: white;
+    font-size: xx-large;
+    margin: 1rem 0;
+    padding: .5rem .8rem;
+    cursor: pointer;
+}
